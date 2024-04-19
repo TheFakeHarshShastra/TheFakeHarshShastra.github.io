@@ -91,7 +91,10 @@
         document.getElementsByTagName("head")[0].appendChild(meta);
         container.className = "unity-mobile";
         canvas.className = "unity-mobile";
-
+        screen.orientation
+        .lock("landscape-primary")
+        .then((message) => console.log(`Orientation Success: ${message}`))
+        .catch((err) => console.log(`"Orientation Failed: ${err}`));
         // To lower canvas resolution on mobile devices to gain some
         // performance, uncomment the following line:
         // config.devicePixelRatio = 1;
