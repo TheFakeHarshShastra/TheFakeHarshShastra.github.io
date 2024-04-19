@@ -2,7 +2,7 @@
   "name": "Test2D",
   "short_name": "Test2D",
   "start_url": "index.html",
-  "display": "fullscreen",
+  "display": "standalone",
   "orientation": "landscape",
   "background_color": "#231F20",
   "theme_color": "#000",
