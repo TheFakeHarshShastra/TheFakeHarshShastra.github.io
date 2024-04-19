@@ -88,8 +88,8 @@
         document.getElementsByTagName("head")[0].appendChild(meta);
         screen.orientation
           .lock("landscape-primary")
-          .then((message) => console.log(`Orientation Success: ${message}`))
-          .catch((err) => console.log(`Orientation Failed: ${err}`));
+          .then((message) => unityShowBanner(`Orientation Success: ${message}`))
+          .catch((err) => unityShowBanner(`Orientation Failed: ${err}`));
       }
 
       loadingBar.style.display = "block";
