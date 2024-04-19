@@ -87,14 +87,10 @@
         var meta = document.createElement("meta");
         meta.name = "viewport";
         meta.content =
-          "width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes";
+          "width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes, orientation=landscape-primary";
         document.getElementsByTagName("head")[0].appendChild(meta);
         container.className = "unity-mobile";
         canvas.className = "unity-mobile";
-        screen.orientation
-        .lock("landscape-primary")
-        .then((message) => console.log(`Orientation Success: ${message}`))
-        .catch((err) => console.log(`"Orientation Failed: ${err}`));
         // To lower canvas resolution on mobile devices to gain some
         // performance, uncomment the following line:
         // config.devicePixelRatio = 1;
